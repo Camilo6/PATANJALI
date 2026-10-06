@@ -1,245 +1,265 @@
 :root {
-      --green: #496b45;
-      --green-dark: #304b2e;
-      --green-light: #edf2e9;
-      --cream: #f7f4ec;
-      --gold: #c5a85d;
-      --text: #292d27;
-      --muted: #70766d;
-      --white: #ffffff;
-      --border: #e4e5df;
-    }
+  --green: #496b45;
+  --green-dark: #304b2e;
+  --green-light: #edf2e9;
+  --cream: #f7f4ec;
+  --gold: #c5a85d;
+  --text: #292d27;
+  --muted: #70766d;
+  --white: #ffffff;
+  --border: #e4e5df;
+}
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+/* =========================
+   RESET
+========================= */
 
-    html {
-      scroll-behavior: smooth;
-    }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--text);
-      background: #fff;
-      line-height: 1.5;
-    }
+html {
+  scroll-behavior: smooth;
+}
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: #fff;
+  line-height: 1.5;
+}
 
-    button {
-      border: none;
-      cursor: pointer;
-      font-family: inherit;
-    }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-    /* =========================
-       TOP BAR
-    ========================== */
+button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
 
-    .topbar {
-      background: var(--green-dark);
-      color: white;
-      text-align: center;
-      padding: 9px 15px;
-      font-size: 13px;
-    }
+/* =========================
+   TOP BAR
+========================= */
 
-    /* =========================
-       HEADER
-    ========================== */
+.topbar {
+  background: var(--green-dark);
+  color: white;
+  text-align: center;
+  padding: 9px 15px;
+  font-size: 13px;
+}
 
-    header {
-      background: white;
-      border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
+/* =========================
+   HEADER
+========================= */
 
-    .header-main {
-      max-width: 1350px;
-      margin: auto;
-      padding: 17px 25px;
+header {
+  background: white;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 
-      display: flex;
-      align-items: center;
-      gap: 30px;
-    }
+.header-main {
+  max-width: 1350px;
+  margin: auto;
+  padding: 17px 25px;
 
-    /* LOGO */
+  display: flex;
+  align-items: center;
 
-    .logo {
-      display: flex;
-      align-items: center;
-      flex-shrink: 0;
-    }
+  gap: 30px;
+}
 
-    .logo img {
-      width: 165px;
-      height: auto;
-      display: block;
-    }
+/* LOGO */
 
-    /* NAVIGATION */
+.logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
 
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 28px;
+.logo img {
+  width: 165px;
+  height: auto;
+  display: block;
+}
 
-      flex: 1;
+/* NAVIGATION */
 
-      font-size: 14px;
-      font-weight: 600;
-    }
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    .nav a {
-      white-space: nowrap;
-      transition: .2s;
-    }
+  gap: 28px;
 
-    .nav a:hover {
-      color: var(--green);
-    }
+  flex: 1;
 
-    /* HEADER ACTIONS */
+  font-size: 14px;
+  font-weight: 600;
+}
 
-    .header-actions {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      flex-shrink: 0;
-    }
+.nav a {
+  white-space: nowrap;
+  transition: 0.2s;
+}
 
-    .action {
-      display: flex;
-      align-items: center;
-      gap: 7px;
+.nav a:hover {
+  color: var(--green);
+}
 
-      font-size: 14px;
-      font-weight: 600;
+/* HEADER ACTIONS */
 
-      white-space: nowrap;
+.header-actions {
+  display: flex;
+  align-items: center;
 
-      transition: .2s;
-    }
+  gap: 20px;
 
-    .action:hover {
-      color: var(--green);
-    }
+  flex-shrink: 0;
+}
 
-    .action-icon {
-      font-size: 21px;
-    }
+.action {
+  display: flex;
+  align-items: center;
 
-    /* =========================
-       HERO
-    ========================== */
+  gap: 7px;
 
-    .hero {
-      min-height: 610px;
+  font-size: 14px;
+  font-weight: 600;
 
-      background:
-        linear-gradient(
-          90deg,
-          rgba(39, 63, 36, .94),
-          rgba(39, 63, 36, .35)
-        ),
-        linear-gradient(
-          135deg,
-          #78916f,
-          #d8d0ad
-        );
+  white-space: nowrap;
 
-      display: flex;
-      align-items: center;
-    }
+  transition: 0.2s;
+}
 
-    .hero-inner {
-      max-width: 1250px;
-      width: 100%;
-      margin: auto;
+.action:hover {
+  color: var(--green);
+}
 
-      padding: 70px 25px;
+.action-icon {
+  font-size: 21px;
+}
 
-      display: grid;
-      grid-template-columns: 1.1fr .9fr;
+/* =========================
+   HERO
+========================= */
 
-      align-items: center;
-      gap: 60px;
-    }
+.hero {
+  min-height: 610px;
 
-    .hero-text {
-      color: white;
-    }
+  background:
+    linear-gradient(90deg, rgba(39, 63, 36, 0.94), rgba(39, 63, 36, 0.35)),
+    linear-gradient(135deg, #78916f, #d8d0ad);
 
-    .hero-label {
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-size: 12px;
-      margin-bottom: 18px;
-    }
+  display: flex;
+  align-items: center;
+}
 
-    .hero h1 {
-      font-size: clamp(42px, 5vw, 67px);
-      line-height: 1.04;
-      margin-bottom: 22px;
-      max-width: 650px;
-    }
+.hero-inner {
+  max-width: 1250px;
+  width: 100%;
 
-    .hero p {
-      font-size: 18px;
-      max-width: 560px;
-      opacity: .92;
-      margin-bottom: 30px;
-    }
+  margin: auto;
 
-    .hero-buttons {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
+  padding: 70px 25px;
 
-    .btn {
-      display: inline-block;
-      padding: 14px 27px;
-      border-radius: 30px;
-      font-weight: 700;
-      transition: .2s;
-    }
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
 
-    .btn:hover {
-      transform: translateY(-2px);
-    }
+  align-items: center;
 
-    .btn-white {
-      background: white;
-      color: var(--green-dark);
-    }
+  gap: 60px;
+}
 
-    .btn-outline {
-      border: 1px solid rgba(255,255,255,.7);
-      color: white;
-    }
+.hero-text {
+  color: white;
+}
 
-    .hero-product {
-      display: flex;
-      justify-content: center;
-    }
+.hero-label {
+  text-transform: uppercase;
 
-    .product-placeholder {
+  letter-spacing: 3px;
+
+  font-size: 12px;
+
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 5vw, 67px);
+
+  line-height: 1.04;
+
+  margin-bottom: 22px;
+
+  max-width: 650px;
+}
+
+.hero p {
+  font-size: 18px;
+
+  max-width: 560px;
+
+  opacity: 0.92;
+
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+
+  gap: 12px;
+
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+
+  padding: 14px 27px;
+
+  border-radius: 30px;
+
+  font-weight: 700;
+
+  transition: 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-white {
+  background: white;
+  color: var(--green-dark);
+}
+
+.btn-outline {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  color: white;
+}
+
+.hero-product {
+  display: flex;
+  justify-content: center;
+}
+
+.product-placeholder {
   width: 100%;
   max-width: 450px;
+
   height: 500px;
 
   background: var(--cream);
+
   border-radius: 25px;
 
   display: flex;
@@ -247,7 +267,8 @@
   justify-content: center;
 
   overflow: hidden;
-  padding: 35px;
+
+  padding: 0;
 
   margin: auto;
 }
@@ -256,584 +277,936 @@
   width: 100%;
   height: 100%;
 
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
+
+  display: block;
+
+  transition: transform 0.5s ease;
+}
+
+.product-placeholder:hover img {
+  transform: scale(1.05);
+}
+
+/* =========================================================
+   VIDEOS / REELS
+========================================================= */
+
+.videos {
+  width: 100%;
+
+  padding: 80px 0;
+
+  background: var(--cream);
+
+  overflow: hidden;
+}
+
+.videos-inner {
+  width: min(1250px, 92%);
+
+  margin: 0 auto;
+}
+
+/* =========================
+   ENCABEZADO VIDEOS
+========================= */
+
+.videos-header {
+  text-align: center;
+
+  margin-bottom: 45px;
+}
+
+.videos-header > span {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+
+  color: var(--green);
+}
+
+.videos-header h2 {
+  margin: 0 0 12px;
+
+  font-size: clamp(32px, 4vw, 52px);
+
+  line-height: 1.1;
+
+  color: var(--text);
+}
+
+.videos-header p {
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  font-size: 16px;
+
+  line-height: 1.6;
+
+  color: var(--muted);
+}
+
+/* =========================================
+   CONTENEDOR DEL CARRUSEL
+========================================= */
+
+.reels-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* =========================================
+   ÁREA DE VIDEOS
+========================================= */
+
+.reels-track {
+  flex: 1;
+  min-width: 0;
+
+  display: flex;
+  gap: 20px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+
+  scrollbar-width: none;
+}
+
+.reels-track::-webkit-scrollbar {
+  display: none;
+}
+
+/* =========================================
+   TARJETAS DE VIDEO
+========================================= */
+
+.reel-card {
+  /*
+      La tarjeta mantiene un tamaño estable.
+
+      El carrusel se adapta automáticamente
+      a la cantidad de videos que existan.
+    */
+
+  flex: 0 0 31%;
+
+  min-width: 0;
+
+  height: 380px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  background: #ddd;
+
+  cursor: pointer;
+
+  scroll-snap-align: start;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* =========================
+   VIDEO
+========================= */
+
+.reel-card video {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+
+  object-fit: cover;
+
+  pointer-events: none;
+
+  background: #ddd;
+}
+
+/* =========================
+   DEGRADADO
+========================= */
+
+.reel-card::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.78),
+    rgba(0, 0, 0, 0.05) 55%,
+    transparent
+  );
+
+  pointer-events: none;
+
+  z-index: 1;
+}
+
+/* =========================
+   HOVER TARJETA
+========================= */
+
+.reel-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.16);
+}
+
+/* =========================
+   PLAY
+========================= */
+
+.reel-play {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.92);
+
+  color: var(--green);
+
+  font-size: 22px;
+
+  padding-left: 3px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+
+  z-index: 3;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.reel-card:hover .reel-play {
+  transform: translate(-50%, -50%) scale(1.08);
+
+  background: white;
+}
+
+/* =========================
+   INFORMACIÓN VIDEO
+========================= */
+
+.reel-info {
+  position: absolute;
+
+  left: 18px;
+  right: 18px;
+
+  bottom: 18px;
+
+  z-index: 3;
+
+  color: white;
+}
+
+.reel-info strong {
+  display: block;
+
+  margin-bottom: 6px;
+
+  font-size: 17px;
+
+  font-weight: 700;
+}
+
+.reel-info span {
+  display: block;
+
+  font-size: 13px;
+
+  opacity: 0.9;
+}
+
+/* =========================
+   FLECHAS
+========================= */
+
+.reel-arrow {
+  flex: 0 0 auto;
+
+  width: 52px;
+  height: 52px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: white;
+
+  color: var(--green);
+
+  font-size: 32px;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+
+  z-index: 5;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.reel-arrow:hover {
+  transform: scale(1.08);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.17);
+}
+
+/* =========================
+   DOTS
+========================= */
+
+.reel-dots {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  margin-top: 25px;
+
+  min-height: 10px;
+}
+
+.reel-dot {
+  width: 8px;
+  height: 8px;
+
+  display: block;
+
+  border-radius: 50%;
+
+  background: #c9cec7;
+
+  cursor: pointer;
+
+  transition:
+    width 0.25s ease,
+    background 0.25s ease;
+}
+
+.reel-dot.active {
+  width: 26px;
+
+  border-radius: 20px;
+
+  background: var(--green);
+}
+
+/* =========================
+   BENEFITS
+========================= */
+
+.benefits {
+  border-bottom: 1px solid var(--border);
+}
+
+.benefits-inner {
+  max-width: 1250px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.benefit {
+  padding: 25px 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  border-right: 1px solid var(--border);
+}
+
+.benefit:last-child {
+  border-right: none;
+}
+
+.benefit-icon {
+  font-size: 27px;
+}
+
+.benefit strong {
+  display: block;
+
+  font-size: 14px;
+}
+
+.benefit span {
+  color: var(--muted);
+
+  font-size: 12px;
+}
+
+/* =========================
+   PRODUCT
+========================= */
+
+.section {
+  max-width: 1250px;
+
+  margin: auto;
+
+  padding: 85px 25px;
+}
+
+.product-section {
+  grid-template-columns: 1fr 1fr;
+
+  gap: 80px;
+
+  align-items: center;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+.product-photo {
+  width: 100%;
+
+  max-width: 500px;
+
+  text-align: center;
+}
+
+/* =========================
+   IMAGEN PRODUCTO
+========================= */
+
+.product-image-container {
+  height: 500px;
+
+  overflow: hidden;
+
+  position: relative;
+
+  background: transparent;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 25px;
+}
+
+.product-image-container img {
+  width: auto;
+
+  height: 100%;
+
+  object-fit: contain;
+
+  object-position: center;
+
+  display: block;
+
+  transition: transform 0.5s ease;
+}
+
+.product-image-container:hover img {
+  transform: scale(1.02);
+}
+
+/* =========================
+   BOTONES CARRUSEL PRODUCTO
+========================= */
+
+.carousel-btn {
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 42px;
+  height: 42px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  font-size: 30px;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  z-index: 2;
+
+  transition: all 0.2s ease;
+}
+
+.carousel-btn:hover {
+  background: white;
+
+  transform: translateY(-50%) scale(1.08);
+}
+
+.carousel-prev {
+  left: 15px;
+}
+
+.carousel-next {
+  right: 15px;
+}
+
+/* =========================
+   MINIATURAS
+========================= */
+
+.product-thumbnails {
+  display: flex;
+
+  gap: 12px;
+
+  margin-top: 15px;
+
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 75px;
+  height: 75px;
+
+  padding: 0;
+
+  border: 2px solid transparent;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
 
   display: block;
 }
 
+.thumbnail:hover {
+  transform: translateY(-2px);
+}
 
-    /* =========================
-       VIDEOS / REELS
-    ========================== */
-
-    .videos {
-      background: var(--cream);
-      overflow: hidden;
-    }
-
-    .videos-inner {
-      max-width: 1350px;
-      margin: auto;
-      padding: 70px 25px 75px;
-    }
-
-    .videos-header {
-      text-align: center;
-      max-width: 720px;
-      margin: 0 auto 35px;
-    }
-
-    .videos-header span {
-      color: var(--green);
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 12px;
-      font-weight: 700;
-    }
-
-    .videos-header h2 {
-      font-size: 36px;
-      margin: 8px 0 10px;
-      line-height: 1.15;
-    }
-
-    .videos-header p {
-      color: var(--muted);
-      font-size: 15px;
-    }
-
-    .reels-wrapper {
-      position: relative;
-    }
-
-    .reels-track {
-      display: flex;
-      gap: 18px;
-      overflow-x: auto;
-      scroll-behavior: smooth;
-      scrollbar-width: none;
-      padding: 5px 4px 15px;
-    }
-
-    .reels-track::-webkit-scrollbar {
-      display: none;
-    }
-
-    .reel-card {
-      flex: 0 0 190px;
-      height: 340px;
-      border-radius: 18px;
-      overflow: hidden;
-      position: relative;
-      background: #111;
-      cursor: pointer;
-      box-shadow: 0 10px 25px rgba(0,0,0,.10);
-      transition: transform .25s ease, box-shadow .25s ease;
-    }
-
-    .reel-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 18px 35px rgba(0,0,0,.18);
-    }
-
-    .reel-card video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      pointer-events: none;
-    }
-
-    .reel-card::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to bottom, transparent 52%, rgba(0,0,0,.75) 100%);
-      pointer-events: none;
-    }
-
-    .reel-play {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 58px;
-      height: 58px;
-      border-radius: 50%;
-      background: rgba(255,255,255,.94);
-      color: var(--green-dark);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding-left: 3px;
-      font-size: 22px;
-      z-index: 3;
-      box-shadow: 0 5px 20px rgba(0,0,0,.2);
-      transition: .2s;
-    }
-
-    .reel-card:hover .reel-play {
-      transform: translate(-50%, -50%) scale(1.08);
-    }
-
-    .reel-info {
-      position: absolute;
-      bottom: 17px;
-      left: 15px;
-      right: 15px;
-      color: white;
-      z-index: 4;
-    }
-
-    .reel-info strong {
-      display: block;
-      font-size: 14px;
-      margin-bottom: 3px;
-    }
-
-    .reel-info span {
-      font-size: 11px;
-      opacity: .88;
-    }
-
-    .reel-arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      background: white;
-      color: var(--green-dark);
-      box-shadow: 0 5px 18px rgba(0,0,0,.15);
-      z-index: 10;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 27px;
-      transition: .2s;
-    }
-
-    .reel-arrow:hover {
-      background: var(--green);
-      color: white;
-    }
-
-    .reel-prev { left: -10px; }
-    .reel-next { right: -10px; }
-
-    .reel-dots {
-      display: flex;
-      justify-content: center;
-      gap: 7px;
-      margin-top: 18px;
-    }
-
-    .reel-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: #c6c9c1;
-      transition: .2s;
-    }
-
-    .reel-dot.active {
-      width: 24px;
-      border-radius: 10px;
-      background: var(--green);
-    }
-
-    /* MODAL DE VIDEO */
-
-    .video-modal {
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,.86);
-      z-index: 999;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 25px;
-    }
-
-    .video-modal.active {
-      display: flex;
-    }
-
-    .modal-content {
-      position: relative;
-      height: 90vh;
-      max-height: 850px;
-      aspect-ratio: 9 / 16;
-      background: #000;
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 20px 60px rgba(0,0,0,.5);
-    }
-
-    .modal-content video {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      display: block;
-      background: #000;
-    }
-
-    .modal-close {
-      position: fixed;
-      top: 20px;
-      right: 25px;
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      background: white;
-      color: #222;
-      font-size: 25px;
-      z-index: 1001;
-    }
-
-    /* =========================
-       BENEFITS
-    ========================== */
-
-    .benefits {
-      border-bottom: 1px solid var(--border);
-    }
-
-    .benefits-inner {
-      max-width: 1250px;
-      margin: auto;
-
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-    }
-
-    .benefit {
-      padding: 25px 20px;
-
-      display: flex;
-      align-items: center;
-      gap: 13px;
-
-      border-right: 1px solid var(--border);
-    }
-
-    .benefit:last-child {
-      border-right: none;
-    }
-
-    .benefit-icon {
-      font-size: 27px;
-    }
-
-    .benefit strong {
-      display: block;
-      font-size: 14px;
-    }
-
-    .benefit span {
-      color: var(--muted);
-      font-size: 12px;
-    }
-
-    /* =========================
-       PRODUCT
-    ========================== */
-
-    .section {
-      max-width: 1250px;
-      margin: auto;
-      padding: 85px 25px;
-    }
-
-    .product-section {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: center;
-    }
-
-    .product-photo {
-      min-height: 560px;
-
-      background: var(--cream);
-
-      border-radius: 20px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      position: relative;
-    }
-
-    .product-photo::before {
-
-      border: 1px dashed #c5c6be;
-
-      color: #999d93;
-
-      padding: 15px;
-
-      font-size: 12px;
-    }
-
-    .product-info .label {
-      color: var(--green);
-
-      text-transform: uppercase;
-
-      font-size: 12px;
-
-      font-weight: 700;
-
-      letter-spacing: 2px;
-    }
-
-    .product-info h2 {
-      font-size: 42px;
-      line-height: 1.1;
-      margin: 12px 0;
-    }
-
-    .rating {
-      color: var(--gold);
-      font-size: 14px;
-      margin-bottom: 15px;
-    }
-
-    .description {
-      color: var(--muted);
-      margin-bottom: 22px;
-    }
-
-    .price {
-      font-size: 29px;
-      font-weight: 800;
-      margin-bottom: 20px;
-    }
-
-    .stock {
-      color: var(--green);
-      font-size: 13px;
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-
-    .purchase {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 20px;
-    }
-
-    .quantity {
-      display: flex;
-      border: 1px solid var(--border);
-      border-radius: 7px;
-      overflow: hidden;
-    }
-
-    .quantity button {
-      width: 40px;
-      background: white;
-      font-size: 18px;
-    }
-
-    .quantity input {
-      width: 45px;
-      border: none;
-      text-align: center;
-      outline: none;
-    }
-
-    .buy-button {
-      flex: 1;
-      background: var(--green);
-      color: white;
-      border-radius: 7px;
-      font-weight: 700;
-      padding: 12px;
-    }
-
-    .buy-button:hover {
-      background: var(--green-dark);
-    }
-
-    .payment-note {
-      font-size: 12px;
-      color: var(--muted);
-    }
-
-    /* =========================
-       FEATURES
-    ========================== */
-
-    .features {
-      background: var(--cream);
-    }
-
-    .features-inner {
-      max-width: 1250px;
-      margin: auto;
-      padding: 80px 25px;
-    }
-
-    .section-heading {
-      text-align: center;
-      max-width: 700px;
-      margin: auto auto 45px;
-    }
-
-    .section-heading span {
-      color: var(--green);
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 12px;
-      font-weight: 700;
-    }
-
-    .section-heading h2 {
-      font-size: 36px;
-      margin: 8px 0;
-    }
-
-    .section-heading p {
-      color: var(--muted);
-    }
-
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .feature {
-      background: white;
-      padding: 30px 25px;
-      border-radius: 15px;
-      border: 1px solid var(--border);
-    }
-
-    .feature-icon {
-      font-size: 32px;
-      margin-bottom: 15px;
-    }
-
-    .feature h3 {
-      margin-bottom: 8px;
-      font-size: 18px;
-    }
-
-    .feature p {
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    /* =========================
-       COMPROMISO
-    ========================== */
-
-    .conscious {
-      background: white;
-    }
-
-    .conscious-inner {
-      max-width: 1100px;
-      margin: auto;
-      padding: 85px 25px;
-      text-align: center;
-    }
-
-    .conscious-inner > span {
-      color: var(--green);
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 12px;
-      font-weight: 700;
-    }
-
-    .conscious h2 {
-      font-size: 40px;
-      line-height: 1.15;
-      margin: 10px auto 18px;
-    }
-
-    .conscious-intro {
-      max-width: 720px;
-      margin: auto;
-      color: var(--muted);
-    }
-
-    .commitments {
-      margin-top: 45px;
-
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-
-    .commitment {
-      background: var(--cream);
-      padding: 28px 20px;
-      border-radius: 15px;
-      text-align: left;
-    }
-
-    .commitment-icon {
-      font-size: 28px;
-      margin-bottom: 13px;
-    }
-
-    .commitment h3 {
-      font-size: 16px;
-      margin-bottom: 7px;
-    }
-
-    .commitment p {
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    .conscious-final {
-      max-width: 800px;
-      margin: 40px auto 0;
-      font-weight: 600;
-      color: var(--green-dark);
-      font-size: 16px;
-    }
-
-    /* =========================
-       AYURVEDA
-    ========================== */
-
-    .ayurveda {
-      background: var(--green-dark);
-      color: white;
-    }
-
-    .ayurveda-inner {
-      max-width: 1100px;
-      margin: auto;
-      padding: 80px 25px;
-
-      display: grid;
-      grid-template-columns: .8fr 1.2fr;
-
-      gap: 60px;
-      align-items: center;
-    }
-
-    .ayurveda-img {
+.thumbnail.active {
+  border-color: var(--green);
+}
+
+/* =========================
+   PRODUCT INFO
+========================= */
+
+.product-info .label {
+  color: var(--green);
+
+  text-transform: uppercase;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.product-info h2 {
+  font-size: 42px;
+
+  line-height: 1.1;
+
+  margin: 12px 0;
+}
+
+.rating {
+  color: var(--gold);
+
+  font-size: 14px;
+
+  margin-bottom: 15px;
+}
+
+.description {
+  color: var(--muted);
+
+  margin-bottom: 22px;
+}
+
+.price {
+  font-size: 29px;
+
+  font-weight: 800;
+
+  margin-bottom: 20px;
+}
+
+.stock {
+  color: var(--green);
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  margin-bottom: 20px;
+}
+
+.purchase {
+  display: flex;
+
+  gap: 10px;
+
+  margin-bottom: 20px;
+}
+
+.quantity {
+  display: flex;
+
+  border: 1px solid var(--border);
+
+  border-radius: 7px;
+
+  overflow: hidden;
+}
+
+.quantity button {
+  width: 40px;
+
+  background: white;
+
+  font-size: 18px;
+}
+
+.quantity input {
+  width: 45px;
+
+  border: none;
+
+  text-align: center;
+
+  outline: none;
+}
+
+.buy-button {
+  flex: 1;
+
+  background: var(--green);
+
+  color: white;
+
+  border-radius: 7px;
+
+  font-weight: 700;
+
+  padding: 12px;
+}
+
+.buy-button:hover {
+  background: var(--green-dark);
+}
+
+.payment-note {
+  font-size: 12px;
+
+  color: var(--muted);
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+  background: var(--cream);
+}
+
+.features-inner {
+  max-width: 1250px;
+
+  margin: auto;
+
+  padding: 80px 25px;
+}
+
+.section-heading {
+  text-align: center;
+
+  max-width: 700px;
+
+  margin: auto auto 45px;
+}
+
+.section-heading span {
+  color: var(--green);
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+.section-heading h2 {
+  font-size: 36px;
+
+  margin: 8px 0;
+}
+
+.section-heading p {
+  color: var(--muted);
+}
+
+.feature-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+.feature {
+  background: white;
+
+  padding: 30px 25px;
+
+  border-radius: 15px;
+
+  border: 1px solid var(--border);
+}
+
+.feature-icon {
+  font-size: 32px;
+
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  margin-bottom: 8px;
+
+  font-size: 18px;
+}
+
+.feature p {
+  color: var(--muted);
+
+  font-size: 14px;
+}
+
+/* =========================
+   COMPROMISO
+========================= */
+
+.conscious {
+  background: white;
+}
+
+.conscious-inner {
+  max-width: 1100px;
+
+  margin: auto;
+
+  padding: 85px 25px;
+
+  text-align: center;
+}
+
+.conscious-inner > span {
+  color: var(--green);
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+.conscious h2 {
+  font-size: 40px;
+
+  line-height: 1.15;
+
+  margin: 10px auto 18px;
+}
+
+.conscious-intro {
+  max-width: 720px;
+
+  margin: auto;
+
+  color: var(--muted);
+}
+
+.commitments {
+  margin-top: 45px;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px;
+}
+
+.commitment {
+  background: var(--cream);
+
+  padding: 28px 20px;
+
+  border-radius: 15px;
+
+  text-align: left;
+}
+
+.commitment-icon {
+  font-size: 28px;
+
+  margin-bottom: 13px;
+}
+
+.commitment h3 {
+  font-size: 16px;
+
+  margin-bottom: 7px;
+}
+
+.commitment p {
+  color: var(--muted);
+
+  font-size: 13px;
+}
+
+.conscious-final {
+  max-width: 800px;
+
+  margin: 40px auto 0;
+
+  font-weight: 600;
+
+  color: var(--green-dark);
+
+  font-size: 16px;
+}
+
+/* =========================
+   AYURVEDA
+========================= */
+
+.ayurveda {
+  background: var(--green-dark);
+
+  color: white;
+}
+
+.ayurveda-inner {
+  max-width: 1100px;
+
+  margin: auto;
+
+  padding: 80px 25px;
+
+  display: grid;
+
+  grid-template-columns: 0.8fr 1.2fr;
+
+  gap: 60px;
+
+  align-items: center;
+}
+
+.ayurveda-img {
   width: 100%;
+
   height: 360px;
 
   border-radius: 22px;
+
   overflow: hidden;
 
   background: var(--cream);
 
   display: flex;
+
   align-items: center;
   justify-content: center;
 }
@@ -843,326 +1216,589 @@
   height: 100%;
 
   object-fit: cover;
+
   object-position: center;
 
   display: block;
 }
 
-    .ayurveda-content span {
-      color: #d8c58c;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 12px;
-      font-weight: 700;
-    }
-
-    .ayurveda-content h2 {
-      font-size: 38px;
-      margin: 10px 0 18px;
-    }
-
-    .ayurveda-content p {
-      color: rgba(255,255,255,.8);
-      margin-bottom: 18px;
-    }
-
-    /* =========================
-       FAQ
-    ========================== */
-
-    .faq {
-      max-width: 850px;
-      margin: auto;
-      padding: 80px 25px;
-    }
-
-    .faq-item {
-      border-bottom: 1px solid var(--border);
-      padding: 20px 0;
-    }
-
-    .faq-question {
-      font-weight: 700;
-      margin-bottom: 7px;
-    }
-
-    .faq-answer {
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    /* =========================
-       CTA
-    ========================== */
-
-    .cta {
-      max-width: 1250px;
-      margin: auto;
-      padding: 0 25px 80px;
-    }
-
-    .cta-box {
-      background: var(--green);
-      color: white;
-      border-radius: 20px;
-      padding: 60px 30px;
-      text-align: center;
-    }
-
-    .cta-box h2 {
-      font-size: 35px;
-      margin-bottom: 10px;
-    }
-
-    .cta-box p {
-      max-width: 600px;
-      margin: 0 auto 25px;
-      opacity: .9;
-    }
-
-    /* =========================
-       FOOTER
-    ========================== */
-
-    footer {
-      background: #222820;
-      color: white;
-      padding: 60px 25px 25px;
-    }
-
-    .footer-inner {
-      max-width: 1250px;
-      margin: auto;
-
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
-
-      gap: 50px;
-    }
-
-    footer h3 {
-      margin-bottom: 15px;
-    }
-
-    footer p,
-    footer a {
-      color: #bfc4ba;
-      font-size: 13px;
-      display: block;
-      margin: 8px 0;
-    }
+.ayurveda-content span {
+  color: #d8c58c;
 
-    .copyright {
-      max-width: 1250px;
-      margin: 45px auto 0;
-      padding-top: 20px;
-      border-top: 1px solid #3a4137;
-      color: #969c91;
-      font-size: 12px;
-    }
+  text-transform: uppercase;
 
-    /* =========================
-       RESPONSIVE
-    ========================== */
+  letter-spacing: 2px;
 
-    @media (max-width: 1100px) {
+  font-size: 12px;
 
-      .header-main {
-        gap: 20px;
-      }
+  font-weight: 700;
+}
 
-      .nav {
-        gap: 17px;
-        font-size: 13px;
-      }
+.ayurveda-content h2 {
+  font-size: 38px;
 
-      .header-actions {
-        gap: 12px;
-      }
+  margin: 10px 0 18px;
+}
 
-      .action {
-        font-size: 13px;
-      }
+.ayurveda-content p {
+  color: rgba(255, 255, 255, 0.8);
 
-      .logo img {
-        width: 145px;
-      }
+  margin-bottom: 18px;
+}
 
-      .reel-arrow {
-        display: none;
-      }
-    }
+/* =========================
+   FAQ
+========================= */
 
-    @media (max-width: 900px) {
+.faq {
+  max-width: 850px;
 
-      .header-main {
-        flex-wrap: wrap;
-      }
+  margin: auto;
 
-      .logo {
-        order: 1;
-      }
+  padding: 80px 25px;
+}
 
-      .header-actions {
-        order: 2;
-        margin-left: auto;
-      }
+.faq-item {
+  border-bottom: 1px solid var(--border);
 
-      .nav {
-        order: 3;
+  padding: 20px 0;
+}
 
-        width: 100%;
+.faq-question {
+  font-weight: 700;
 
-        justify-content: flex-start;
+  margin-bottom: 7px;
+}
 
-        overflow-x: auto;
+.faq-answer {
+  color: var(--muted);
 
-        padding-top: 10px;
+  font-size: 14px;
+}
 
-        border-top: 1px solid var(--border);
-      }
-
-      .hero-inner {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-product {
-        display: none;
-      }
-
-      .benefits-inner {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .product-section {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-
-      .feature-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .commitments {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .ayurveda-inner {
-        grid-template-columns: 1fr;
-      }
-
-      .footer-inner {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .reel-arrow {
-        display: none;
-      }
-    }
-
-    @media (max-width: 600px) {
-
-      .header-main {
-        padding: 12px 18px;
-      }
-
-      .logo img {
-        width: 140px;
-      }
-
-      .header-actions {
-        gap: 12px;
-      }
-
-      .action span:last-child {
-        display: none;
-      }
-
-      .nav {
-        gap: 22px;
-        padding-bottom: 8px;
-      }
-
-      .hero {
-        min-height: 550px;
-      }
-
-      .hero-inner {
-        padding: 55px 20px;
-      }
-
-      .hero h1 {
-        font-size: 43px;
-      }
-
-      .hero p {
-        font-size: 15px;
-      }
-
-      .videos-inner {
-        padding: 60px 0 65px;
-      }
-
-      .videos-header {
-        padding: 0 20px;
-      }
-
-      .videos-header h2 {
-        font-size: 30px;
-      }
-
-      .reels-track {
-        padding-left: 20px;
-        padding-right: 20px;
-        gap: 14px;
-      }
-
-      .reel-card {
-        flex-basis: 175px;
-        height: 310px;
-      }
-
-      .reel-dots {
-        display: none;
-      }
-
-      .modal-content {
-        height: 80vh;
-      }
-
-      .benefits-inner {
-        grid-template-columns: 1fr;
-      }
-
-      .benefit {
-        border-right: none;
-        border-bottom: 1px solid var(--border);
-      }
-
-      .section,
-      .features-inner,
-      .conscious-inner,
-      .ayurveda-inner {
-        padding: 60px 18px;
-      }
-
-      .product-info h2 {
-        font-size: 34px;
-      }
-
-      .product-photo {
-        min-height: 400px;
-      }
-
-      .commitments {
-        grid-template-columns: 1fr;
-      }
-
-      .conscious h2 {
-        font-size: 31px;
-      }
-
-      .footer-inner {
-        grid-template-columns: 1fr;
-      }
-    }
+/* =========================
+   CTA
+========================= */
+
+.cta {
+  max-width: 1250px;
+
+  margin: auto;
+
+  padding: 0 25px 80px;
+}
+
+.cta-box {
+  background: var(--green);
+
+  color: white;
+
+  border-radius: 20px;
+
+  padding: 60px 30px;
+
+  text-align: center;
+}
+
+.cta-box h2 {
+  font-size: 35px;
+
+  margin-bottom: 10px;
+}
+
+.cta-box p {
+  max-width: 600px;
+
+  margin: 0 auto 25px;
+
+  opacity: 0.9;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  background: #222820;
+
+  color: white;
+
+  padding: 60px 25px 25px;
+}
+
+.footer-inner {
+  max-width: 1250px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+
+  gap: 50px;
+}
+
+footer h3 {
+  margin-bottom: 15px;
+}
+
+footer p,
+footer a {
+  color: #bfc4ba;
+
+  font-size: 13px;
+
+  display: block;
+
+  margin: 8px 0;
+}
+
+.copyright {
+  max-width: 1250px;
+
+  margin: 45px auto 0;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #3a4137;
+
+  color: #969c91;
+
+  font-size: 12px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+/* =========================
+   TABLET / LAPTOP
+========================= */
+
+@media (max-width: 1100px) {
+  .header-main {
+    gap: 20px;
+  }
+
+  .nav {
+    gap: 17px;
+
+    font-size: 13px;
+  }
+
+  .header-actions {
+    gap: 12px;
+  }
+
+  .action {
+    font-size: 13px;
+  }
+
+  .logo img {
+    width: 145px;
+  }
+
+  /*
+       IMPORTANTE:
+       Ya NO ocultamos las flechas aquí.
+       El JavaScript decide cuándo mostrarlas.
+    */
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .header-main {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    order: 1;
+  }
+
+  .header-actions {
+    order: 2;
+
+    margin-left: auto;
+  }
+
+  .nav {
+    order: 3;
+
+    width: 100%;
+
+    justify-content: flex-start;
+
+    overflow-x: auto;
+
+    padding-top: 10px;
+
+    border-top: 1px solid var(--border);
+  }
+
+  /* HERO */
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-product {
+    display: none;
+  }
+
+  /* BENEFITS */
+
+  .benefits-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* PRODUCT */
+
+  .product-section {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  /* FEATURES */
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* COMMITMENTS */
+
+  .commitments {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* AYURVEDA */
+
+  .ayurveda-inner {
+    grid-template-columns: 1fr;
+  }
+
+  /* FOOTER */
+
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* VIDEOS */
+
+  .reels-track {
+    gap: 16px;
+  }
+
+  .reel-card {
+    flex: 0 0 calc((100% - 16px) / 2);
+
+    height: 360px;
+  }
+
+  .reel-arrow {
+    width: 46px;
+    height: 46px;
+
+    font-size: 28px;
+  }
+}
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+  .header-main {
+    padding: 12px 18px;
+  }
+
+  .logo img {
+    width: 140px;
+  }
+
+  .header-actions {
+    gap: 12px;
+  }
+
+  .action span:last-child {
+    display: none;
+  }
+
+  .nav {
+    gap: 22px;
+
+    padding-bottom: 8px;
+  }
+
+  /* HERO */
+
+  .hero {
+    min-height: 550px;
+  }
+
+  .hero-inner {
+    padding: 55px 20px;
+  }
+
+  .hero h1 {
+    font-size: 43px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  /* VIDEOS */
+
+  .videos {
+    padding: 55px 0;
+  }
+
+  .videos-inner {
+    width: 90%;
+  }
+
+  .videos-header {
+    margin-bottom: 30px;
+  }
+
+  .videos-header h2 {
+    font-size: 30px;
+  }
+
+  .videos-header p {
+    font-size: 14px;
+  }
+
+  .reels-wrapper {
+    gap: 10px;
+  }
+
+  .reels-track {
+    gap: 14px;
+  }
+
+  /*
+       En celular mostramos 1 video completo.
+    */
+
+  .reel-card {
+    flex: 0 0 100%;
+
+    height: 420px;
+
+    border-radius: 18px;
+  }
+
+  .reel-arrow {
+    width: 40px;
+    height: 40px;
+
+    font-size: 25px;
+  }
+
+  .reel-play {
+    width: 55px;
+    height: 55px;
+
+    font-size: 20px;
+  }
+
+  .reel-info {
+    left: 16px;
+    right: 16px;
+
+    bottom: 16px;
+  }
+
+  .reel-info strong {
+    font-size: 16px;
+  }
+
+  .reel-info span {
+    font-size: 12px;
+  }
+
+  /* BENEFITS */
+
+  .benefits-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit {
+    border-right: none;
+
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* SECTIONS */
+
+  .section,
+  .features-inner,
+  .conscious-inner,
+  .ayurveda-inner {
+    padding: 60px 18px;
+  }
+
+  /* PRODUCT */
+
+  .product-info h2 {
+    font-size: 34px;
+  }
+
+  .product-photo {
+    min-height: 400px;
+  }
+
+  /* COMMITMENTS */
+
+  .commitments {
+    grid-template-columns: 1fr;
+  }
+
+  .conscious h2 {
+    font-size: 31px;
+  }
+
+  /* FOOTER */
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================
+   MODAL DE VIDEOS
+   ========================================== */
+
+.video-modal {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 9999;
+
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/* Modal visible */
+
+.video-modal.active {
+  display: flex;
+}
+
+/* ==========================================
+   CONTENIDO DEL VIDEO
+   ========================================== */
+
+.modal-content {
+  position: relative;
+
+  width: min(90vw, 500px);
+  max-height: 90vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==========================================
+   VIDEO
+   ========================================== */
+
+.modal-content video {
+  display: block;
+
+  width: 100%;
+  max-height: 85vh;
+
+  object-fit: contain;
+
+  border-radius: 18px;
+
+  background: #000;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+/* ==========================================
+   BOTÓN CERRAR
+   ========================================== */
+
+.modal-close {
+  position: fixed;
+
+  top: 25px;
+  right: 30px;
+
+  width: 48px;
+  height: 48px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  color: #292d27;
+
+  font-size: 32px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  z-index: 10000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.modal-close:hover {
+  transform: scale(1.08);
+  background: #ffffff;
+}
+
+/* ==========================================
+   MÓVIL
+   ========================================== */
+
+@media (max-width: 600px) {
+  .video-modal {
+    padding: 15px;
+  }
+
+  .modal-content {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .modal-content video {
+    width: 100%;
+    max-height: 85vh;
+    border-radius: 14px;
+  }
+
+  .modal-close {
+    top: 15px;
+    right: 15px;
+
+    width: 42px;
+    height: 42px;
+
+    font-size: 28px;
+  }
+}

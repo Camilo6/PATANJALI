@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,10 +36,7 @@
 
       <a href="#" class="logo">
 
-        <img
-          src="Images/Logo.PNG"
-          alt="Patanjali Colombia"
-        >
+        <img src="Images/Logo.PNG" alt="Patanjali Colombia">
 
       </a>
 
@@ -133,17 +131,11 @@
 
         <div class="hero-buttons">
 
-          <a
-            href="#producto"
-            class="btn btn-white"
-          >
+          <a href="#producto" class="btn btn-white">
             Comprar ahora →
           </a>
 
-          <a
-            href="#beneficios"
-            class="btn btn-outline"
-          >
+          <a href="#beneficios" class="btn btn-outline">
             Conocer más
           </a>
 
@@ -156,10 +148,7 @@
 
         <div class="product-placeholder">
 
-          <img
-          src="Images/Crema.png"
-          alt="Patanjali Colombia"
-          >
+          <img src="Images/Crema.jpeg" alt="Patanjali Colombia">
 
         </div>
 
@@ -170,13 +159,10 @@
   </section>
 
   <!-- =========================
-       VIDEOS / REELS
-  ========================== -->
+     VIDEOS / REELS
+========================== -->
 
-  <section
-    class="videos"
-    id="videos"
-  >
+  <section class="videos" id="videos">
 
     <div class="videos-inner">
 
@@ -199,142 +185,150 @@
 
       <div class="reels-wrapper">
 
-        <button
-          class="reel-arrow reel-prev"
-          type="button"
-          onclick="scrollReels(-1)"
-          aria-label="Videos anteriores"
-        >
+        <button class="reel-arrow reel-prev" type="button" onclick="scrollReels(-1)" aria-label="Videos anteriores">
           ‹
         </button>
 
+
+        <div class="reels-track" id="reelsTrack">
+
+          <!-- VIDEO 1 -->
+          <div class="reel-card" onclick="openVideo('Videos/Video_1.mp4')">
+
+            <video src="Videos/Video_1.mp4" preload="metadata" muted playsinline></video>
+
+            <div class="reel-play">
+              ▶
+            </div>
+
+            <div class="reel-info">
+
+              <strong>
+                Inspiración natural
+              </strong>
+
+              <span>
+                Descubre Patanjali
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <!-- VIDEO 2 -->
+          <div class="reel-card" onclick="openVideo('Videos/Video_2.mp4')">
+
+            <video src="Videos/Video_2.mp4" preload="metadata" muted playsinline></video>
+
+            <div class="reel-play">
+              ▶
+            </div>
+
+            <div class="reel-info">
+
+              <strong>
+                Cuidado oral
+              </strong>
+
+              <span>
+                Conoce nuestra crema dental
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <!-- VIDEO 3 -->
+          <div class="reel-card" onclick="openVideo('Videos/Video_3.mp4')">
+
+            <video src="Videos/Video_3.mp4" preload="metadata" muted playsinline></video>
+
+            <div class="reel-play">
+              ▶
+            </div>
+
+            <div class="reel-info">
+
+              <strong>
+                Bienestar
+              </strong>
+
+              <span>
+                Productos Patanjali
+              </span>
+
+            </div>
+
+          </div>
+
+          <!--
+        PARA AGREGAR OTRO VIDEO:
+
         <div
-          class="reels-track"
-          id="reelsTrack"
+          class="reel-card"
+          onclick="openVideo('Videos/Video_4.mp4')"
         >
 
-          <div class="reel-card" onclick="openVideo('Videos/video1.mp4')">
-            <video src="Videos/video1.mp4" preload="metadata" muted playsinline></video>
-            <div class="reel-play">▶</div>
-            <div class="reel-info">
-              <strong>Cuidado oral</strong>
-              <span>Conoce nuestra crema dental</span>
-            </div>
+          <video
+            src="Videos/Video_4.mp4"
+            preload="metadata"
+            muted
+            playsinline
+          ></video>
+
+          <div class="reel-play">
+            ▶
           </div>
 
-          <div class="reel-card" onclick="openVideo('Videos/video2.mp4')">
-            <video src="Videos/video2.mp4" preload="metadata" muted playsinline></video>
-            <div class="reel-play">▶</div>
-            <div class="reel-info">
-              <strong>Inspiración natural</strong>
-              <span>Descubre Patanjali</span>
-            </div>
-          </div>
+          <div class="reel-info">
 
-          <div class="reel-card" onclick="openVideo('Videos/video3.mp4')">
-            <video src="Videos/video3.mp4" preload="metadata" muted playsinline></video>
-            <div class="reel-play">▶</div>
-            <div class="reel-info">
-              <strong>Bienestar</strong>
-              <span>Productos Patanjali</span>
-            </div>
-          </div>
+            <strong>
+              Título del video
+            </strong>
 
-          <div class="reel-card" onclick="openVideo('Videos/video4.mp4')">
-            <video src="Videos/video4.mp4" preload="metadata" muted playsinline></video>
-            <div class="reel-play">▶</div>
-            <div class="reel-info">
-              <strong>Tradición</strong>
-              <span>Inspirados en Ayurveda</span>
-            </div>
-          </div>
+            <span>
+              Descripción del video
+            </span>
 
-          <div class="reel-card" onclick="openVideo('Videos/video5.mp4')">
-            <video src="Videos/video5.mp4" preload="metadata" muted playsinline></video>
-            <div class="reel-play">▶</div>
-            <div class="reel-info">
-              <strong>Cuidado personal</strong>
-              <span>Conoce nuestros productos</span>
-            </div>
-          </div>
-
-          <div class="reel-card" onclick="openVideo('Videos/video6.mp4')">
-            <video src="Videos/video6.mp4" preload="metadata" muted playsinline></video>
-            <div class="reel-play">▶</div>
-            <div class="reel-info">
-              <strong>Ingredientes</strong>
-              <span>Una mirada a Patanjali</span>
-            </div>
-          </div>
-
-          <div class="reel-card" onclick="openVideo('Videos/video7.mp4')">
-            <video src="Videos/video7.mp4" preload="metadata" muted playsinline></video>
-            <div class="reel-play">▶</div>
-            <div class="reel-info">
-              <strong>Rutina diaria</strong>
-              <span>Bienestar consciente</span>
-            </div>
-          </div>
-
-          <div class="reel-card" onclick="openVideo('Videos/video8.mp4')">
-            <video src="Videos/video8.mp4" preload="metadata" muted playsinline></video>
-            <div class="reel-play">▶</div>
-            <div class="reel-info">
-              <strong>Patanjali</strong>
-              <span>Conoce nuestra propuesta</span>
-            </div>
           </div>
 
         </div>
+        -->
 
-        <button
-          class="reel-arrow reel-next"
-          type="button"
-          onclick="scrollReels(1)"
-          aria-label="Siguientes videos"
-        >
+        </div>
+
+
+        <button class="reel-arrow reel-next" type="button" onclick="scrollReels(1)" aria-label="Siguientes videos">
           ›
         </button>
 
       </div>
 
-      <div class="reel-dots" aria-hidden="true">
-        <span class="reel-dot active"></span>
-        <span class="reel-dot"></span>
-        <span class="reel-dot"></span>
-        <span class="reel-dot"></span>
-      </div>
+
+      <div class="reel-dots" id="reelDots"></div>
 
     </div>
 
   </section>
 
+
   <!-- MODAL PARA VER EL REEL EN GRANDE -->
 
-  <div
-    class="video-modal"
-    id="videoModal"
-  >
+  <div class="video-modal" id="videoModal">
 
-    <button
-      class="modal-close"
-      type="button"
-      onclick="closeVideo()"
-      aria-label="Cerrar video"
-    >
+    <button class="modal-close" type="button" onclick="closeVideo()" aria-label="Cerrar video">
       ×
     </button>
 
     <div class="modal-content">
-      <video
-        id="modalVideo"
-        controls
-        playsinline
-      ></video>
+
+      <video id="modalVideo" controls playsinline></video>
+
     </div>
 
   </div>
-
 
 
   <!-- =========================
@@ -434,23 +428,60 @@
 
 
   <!-- =========================
-       PRODUCTO
-  ========================== -->
+     PRODUCTO
+========================== -->
 
-  <section
-    class="section"
-    id="producto"
-  >
+  <section class="section" id="producto">
 
     <div class="product-section">
 
+      <!-- =========================
+         FOTOS DEL PRODUCTO
+    ========================== -->
+
       <div class="product-photo">
-        <img
-          src="Images/Crema.png"
-          alt="Patanjali Colombia"
-        >
+
+        <div class="product-image-container">
+
+          <img id="productImage" src="Images/Crema.jpeg" alt="Crema Dental Herbal SIN FLÚOR">
+
+          <button id="productPrev" class="carousel-btn carousel-prev" type="button" aria-label="Imagen anterior">
+            ‹
+          </button>
+
+          <button id="productNext" class="carousel-btn carousel-next" type="button" aria-label="Siguiente imagen">
+            ›
+          </button>
+
+        </div>
+
+
+        <!-- MINIATURAS -->
+
+        <div class="product-thumbnails">
+
+          <button class="thumbnail active" type="button" data-index="0" aria-label="Ver imagen 1">
+            <img src="Images/Crema.jpeg" alt="Crema Dental Patanjali">
+          </button>
+
+
+          <button class="thumbnail" type="button" data-index="1" aria-label="Ver imagen 2">
+            <img src="Images/Crema_des.jpeg" alt="Crema Dental Patanjali">
+          </button>
+
+
+          <button class="thumbnail" type="button" data-index="2" aria-label="Ver imagen 3">
+            <img src="Images/Crema_desc.jpeg" alt="Crema Dental Patanjali">
+          </button>
+
+        </div>
+
       </div>
 
+
+      <!-- =========================
+         INFORMACIÓN DEL PRODUCTO
+    ========================== -->
 
       <div class="product-info">
 
@@ -458,10 +489,12 @@
           Producto destacado
         </span>
 
+
         <h2>
           Crema Dental Herbal
           SIN FLÚOR
         </h2>
+
 
         <div class="rating">
 
@@ -473,6 +506,7 @@
 
         </div>
 
+
         <p class="description">
 
           Descubre una alternativa para tu rutina
@@ -481,39 +515,40 @@
 
         </p>
 
+
         <div class="price">
           $23.900 COP
         </div>
+
 
         <div class="stock">
           ✓ Producto disponible
         </div>
 
+
         <div class="purchase">
 
           <div class="quantity">
 
-            <button onclick="changeQuantity(-1)">
+            <button type="button" onclick="changeQuantity(-1)">
               −
             </button>
 
-            <input
-              id="quantity"
-              value="1"
-              readonly
-            >
+            <input id="quantity" value="1" readonly>
 
-            <button onclick="changeQuantity(1)">
+            <button type="button" onclick="changeQuantity(1)">
               +
             </button>
 
           </div>
 
-          <button class="buy-button">
+
+          <button class="buy-button" type="button">
             Agregar al carrito
           </button>
 
         </div>
+
 
         <p class="payment-note">
           🔒 Pago seguro mediante PayU
@@ -525,15 +560,11 @@
 
   </section>
 
-
   <!-- =========================
        CARACTERÍSTICAS
   ========================== -->
 
-  <section
-    class="features"
-    id="beneficios"
-  >
+  <section class="features" id="beneficios">
 
     <div class="features-inner">
 
@@ -621,10 +652,7 @@
        COMPROMISO
   ========================== -->
 
-  <section
-    class="conscious"
-    id="compromiso"
-  >
+  <section class="conscious" id="compromiso">
 
     <div class="conscious-inner">
 
@@ -743,18 +771,12 @@
        AYURVEDA
   ========================== -->
 
-  <section
-    class="ayurveda"
-    id="ayurveda"
-  >
+  <section class="ayurveda" id="ayurveda">
 
     <div class="ayurveda-inner">
 
       <div class="ayurveda-img">
-        <img
-          src="Images/Ayurveda.jpg"
-          alt="Patanjali Colombia"
-        >
+        <img src="Images/Ayurveda.jpg" alt="Patanjali Colombia">
       </div>
 
 
@@ -781,10 +803,7 @@
           y bienestar.
         </p>
 
-        <a
-          href="#producto"
-          class="btn btn-white"
-        >
+        <a href="#producto" class="btn btn-white">
           Conocer el producto
         </a>
 
@@ -799,10 +818,7 @@
        FAQ
   ========================== -->
 
-  <section
-    class="faq"
-    id="faq"
-  >
+  <section class="faq" id="faq">
 
     <div class="section-heading">
 
@@ -902,10 +918,7 @@
         SIN FLÚOR de Patanjali Colombia.
       </p>
 
-      <a
-        href="#producto"
-        class="btn btn-white"
-      >
+      <a href="#producto" class="btn btn-white">
         Comprar ahora →
       </a>
 
@@ -918,103 +931,104 @@
      FOOTER
 ========================== -->
 
-<footer>
+  <footer>
 
-  <div class="footer-inner">
+    <div class="footer-inner">
 
-    <div>
-      <h3>
-        PATANJALI COLOMBIA
-      </h3>
+      <div>
+        <h3>
+          PATANJALI COLOMBIA
+        </h3>
 
-      <p>
-        Bienestar y cuidado personal inspirado
-        en la tradición ayurvédica.
-      </p>
+        <p>
+          Bienestar y cuidado personal inspirado
+          en la tradición ayurvédica.
+        </p>
+      </div>
+
+
+      <!-- COMPRAR -->
+
+      <div>
+
+        <h3>
+          Comprar
+        </h3>
+
+        <a href="index.html#producto">
+          Crema Dental
+        </a>
+
+        <a href="faq.html">
+          Preguntas frecuentes
+        </a>
+
+        <a href="#">
+          Iniciar sesión
+        </a>
+
+      </div>
+
+
+      <!-- AYUDA -->
+
+      <div>
+
+        <h3>
+          Ayuda
+        </h3>
+
+        <a href="envios.html">
+          Envíos
+        </a>
+
+        <a href="cambios-devoluciones.html">
+          Cambios y devoluciones
+        </a>
+
+        <a href="contacto.html">
+          Contacto
+        </a>
+
+      </div>
+
+
+      <!-- LEGAL -->
+
+      <div>
+
+        <h3>
+          Legal
+        </h3>
+
+        <a href="#">
+          Términos y condiciones
+        </a>
+
+        <a href="#">
+          Política de privacidad
+        </a>
+
+        <a href="#">
+          Tratamiento de datos
+        </a>
+
+      </div>
+
     </div>
 
 
-    <!-- COMPRAR -->
+    <div class="copyright">
 
-    <div>
-
-      <h3>
-        Comprar
-      </h3>
-
-      <a href="index.html#producto">
-        Crema Dental
-      </a>
-
-      <a href="faq.html">
-        Preguntas frecuentes
-      </a>
-
-      <a href="#">
-        Iniciar sesión
-      </a>
+      © 2026 Patanjali Colombia.
+      Todos los derechos reservados.
 
     </div>
 
+  </footer>
 
-    <!-- AYUDA -->
-
-    <div>
-
-      <h3>
-        Ayuda
-      </h3>
-
-      <a href="envios.html">
-        Envíos
-      </a>
-
-      <a href="cambios-devoluciones.html">
-        Cambios y devoluciones
-      </a>
-
-      <a href="contacto.html">
-        Contacto
-      </a>
-
-    </div>
-
-
-    <!-- LEGAL -->
-
-    <div>
-
-      <h3>
-        Legal
-      </h3>
-
-      <a href="#">
-        Términos y condiciones
-      </a>
-
-      <a href="#">
-        Política de privacidad
-      </a>
-
-      <a href="#">
-        Tratamiento de datos
-      </a>
-
-    </div>
-
-  </div>
-
-
-  <div class="copyright">
-
-    © 2026 Patanjali Colombia.
-    Todos los derechos reservados.
-
-  </div>
-
-</footer>
-
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
+
 </html>
